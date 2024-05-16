@@ -1,0 +1,35 @@
+*//Colours//*
+greyColour = "#585858"
+
+*//Lists (Changes not recommended)//*
+world1Colours = ["red", "black", "black", "black", "black", "black",
+		 "black", "black", "black", "black", "black"]
+
+buttonDisabled = ["normal", "disabled", "disabled", "disabled", "disabled",
+ 		  "disabled", "disabled", "disabled", "disabled", "disabled", "disabled"]
+
+titleColourList = ["#ebebff", "#dbd8ff", "#d8d8ff", "#c9c4ff", "#c4c4ff", "#b1b1ff",
+                   "#b8b1ff", "#9d9dff", "#a59dff", "#8989ff", "#9389ff", "#7676ff",
+                   "#8176ff", "#6262ff", "#6f62ff", "#4e4eff", "#5d4eff", "#3b3bff",
+                   "#4b3bff", "#2727ff", "#3927ff", "#1414ff", "#2814ff"]
+
+*//Window Transparency (Change if you feel they are too transparent or visa-versa)//*
+loseScreenTransparency = 0.9
+pauseScreenTransparency = 0.8
+completeScreenTransparency = 0.9
+headsUpTransparency = 0.7
+
+*//Advanced Options//*
+picklingProtocol = h *(h means the highest available will be selected, otherwise use 0 - 5)*
+LeftControl = "a"
+rightControl = "d"
+jumpControl = "space"
+coinChangeSpeed = 150 *(ms)*
+menuChangeSpeed = 55 *(ms)*
+gameUpdateSpeed = 16 *(ms)*
+enemySpeed = 8 *(ms)*
+
+
+
+
+
