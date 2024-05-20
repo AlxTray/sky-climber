@@ -39,12 +39,12 @@ titleColour = "#ebebff"
 
 # 2D Array of the directories for each LevelTime text file,
 # and their coresponding level number
-leaderboardIndexArray = [["LevelTimes/LevelOneTimes.txt", "Level 1"],["LevelTimes/LevelTwoTimes.txt", "Level 2"],
-                         ["LevelTimes/LevelThreeTimes.txt", "Level 3"],["LevelTimes/LevelFourTimes.txt", "Level 4"],
-                         ["LevelTimes/LevelFiveTimes.txt", "Level 5"],["LevelTimes/LevelSixTimes.txt", "Level 6"],
-                         ["LevelTimes/LevelSevenTimes.txt", "Level 7"],["LevelTimes/LevelEightTimes.txt", "Level 8"],
-                         ["LevelTimes/LevelNineTimes.txt", "Level 9"],["LevelTimes/LevelTenTimes.txt", "Level 10"],
-                         ["LevelTimes/FinalLevelTimes.txt", "Final Level"]]
+leaderboardIndexArray = [["./LevelTimes/LevelOneTimes.txt", "Level 1"],["./LevelTimes/LevelTwoTimes.txt", "Level 2"],
+                         ["./LevelTimes/LevelThreeTimes.txt", "Level 3"],["./LevelTimes/LevelFourTimes.txt", "Level 4"],
+                         ["./LevelTimes/LevelFiveTimes.txt", "Level 5"],["./LevelTimes/LevelSixTimes.txt", "Level 6"],
+                         ["./LevelTimes/LevelSevenTimes.txt", "Level 7"],["./LevelTimes/LevelEightTimes.txt", "Level 8"],
+                         ["./LevelTimes/LevelNineTimes.txt", "Level 9"],["./LevelTimes/LevelTenTimes.txt", "Level 10"],
+                         ["./LevelTimes/FinalLevelTimes.txt", "Final Level"]]
 
 window = Tk() # Creates an instance of Tk to be used of the window
 
@@ -57,10 +57,10 @@ window.title("Sky Climber")
 # Gets the directory path of "Sky Climber.py"
 # Adds the file names to the directory path so a true path
 # is made for the PhotoImage method
-dirPath = "C:\Sky Climber" + "\Textures"
-dirPathMenuBackground = dirPath + "\MenuBackground.gif"
-dirPathCharacterRight = dirPath + "\CharacterRight.gif"
-dirPathCharacterLeft = dirPath + "\CharacterLeft.gif"
+dirPath = "./Textures"
+dirPathMenuBackground = dirPath + "/MenuBackground.gif"
+dirPathCharacterRight = dirPath + "/CharacterRight.gif"
+dirPathCharacterLeft = dirPath + "/CharacterLeft.gif"
 
 # Defines the tkinter variables are able to
 # be dynamically changed by the widgets
@@ -87,24 +87,24 @@ statSelection.set("")
 
 # Gets the images for the game
 menuBackground = PhotoImage(file = dirPathMenuBackground)
-grassCentre = PhotoImage(file = dirPath + "\Grass_Centre.gif")
-grassEdgeRight = PhotoImage(file = dirPath + "\Grass_Edge_Right.gif")
-dirtCentre = PhotoImage(file = dirPath + "\Dirt_Centre.gif")
-dirtEdgeRight = PhotoImage(file = dirPath + "\Dirt_Edge_Right.gif")
-tree1 = PhotoImage(file = dirPath + "\Tree_1.gif")
-gameBackgroundGrass = PhotoImage(file = dirPath + "\Game_Background_Grass.gif")
-dirtEdgeLeft = PhotoImage(file = dirPath + "\Dirt_Edge_Left.gif")
-grassEdgeLeft = PhotoImage(file = dirPath + "\Grass_Edge_Left.gif")
-stoneCentre = PhotoImage(file = dirPath + "\Stone_Centre.gif")
-stoneTop = PhotoImage(file = dirPath + "\Stone_Top.gif")
-sawBlade = PhotoImage(file = dirPath + "\Saw_Blade.gif")
-sawBlade2 = PhotoImage(file = dirPath + "\Saw_Blade_2.gif")
-sawBlade3 = PhotoImage(file = dirPath + "\Saw_Blade_3.gif")
-sawBlade4 = PhotoImage(file = dirPath + "\Saw_Blade_4.gif")
-sawBlade5 = PhotoImage(file = dirPath + "\Saw_Blade_5.gif")
-sawBlade6 = PhotoImage(file = dirPath + "\Saw_Blade_6.gif")
-sawBlade7 = PhotoImage(file = dirPath + "\Saw_Blade_7.gif")
-sawBlade8 = PhotoImage(file = dirPath + "\Saw_Blade_8.gif")
+grassCentre = PhotoImage(file = dirPath + "/Grass_Centre.gif")
+grassEdgeRight = PhotoImage(file = dirPath + "/Grass_Edge_Right.gif")
+dirtCentre = PhotoImage(file = dirPath + "/Dirt_Centre.gif")
+dirtEdgeRight = PhotoImage(file = dirPath + "/Dirt_Edge_Right.gif")
+tree1 = PhotoImage(file = dirPath + "/Tree_1.gif")
+gameBackgroundGrass = PhotoImage(file = dirPath + "/Game_Background_Grass.gif")
+dirtEdgeLeft = PhotoImage(file = dirPath + "/Dirt_Edge_Left.gif")
+grassEdgeLeft = PhotoImage(file = dirPath + "/Grass_Edge_Left.gif")
+stoneCentre = PhotoImage(file = dirPath + "/Stone_Centre.gif")
+stoneTop = PhotoImage(file = dirPath + "/Stone_Top.gif")
+sawBlade = PhotoImage(file = dirPath + "/Saw_Blade.gif")
+sawBlade2 = PhotoImage(file = dirPath + "/Saw_Blade_2.gif")
+sawBlade3 = PhotoImage(file = dirPath + "/Saw_Blade_3.gif")
+sawBlade4 = PhotoImage(file = dirPath + "/Saw_Blade_4.gif")
+sawBlade5 = PhotoImage(file = dirPath + "/Saw_Blade_5.gif")
+sawBlade6 = PhotoImage(file = dirPath + "/Saw_Blade_6.gif")
+sawBlade7 = PhotoImage(file = dirPath + "/Saw_Blade_7.gif")
+sawBlade8 = PhotoImage(file = dirPath + "/Saw_Blade_8.gif")
 
 # Loads the "world1Assets" array from "LevelSelectionAssets"
 world1Assets = levelSelection.world1AssetsArray(menuBackground, greyColour)
